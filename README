@@ -1,0 +1,28 @@
+This is the readme file for NEWTON, a 2nd order numerical ODE solver that uses RK4.
+
+It is called NEWTON for a very simple reason: you can use it to solve Newton's 2nd law!
+That is the reason I originally wrote it, although it is good for other uses too!
+
+The source code consists of 2 files:
+	newton.h - Header file w/ documentation
+	newton.c - Implementation of the solver
+
+Read newton.h for API documentation. It is all in there.
+
+BUILDING:
+Generally speaking, you can integrate NEWTON directly into your existing source code
+with very little difficulty. This is the recommended way to use it.
+
+If you want NEWTON as a static library, you can use these commands:
+	gcc -c newton.c
+	ar rcs libnewton.a newton.o
+OR, if you want NEWTON as a shared library, you can compile it with this command:
+	gcc -shared -o libnewton.so -fPIC newton.c
+Using NEWTON as a library (shared or static) is NOT recommended.
+
+And as for licensing/copying:
+You can consider it as public domain for all intents and purposes.
+
+With that being said, I request that you do not remove my name from any of the files.
+I also request that you do not use it for evil (fascism, genocide, state terrorism, etc.)
+I can't go after you if you do those things, but that still would make you a jerk! 3:<
